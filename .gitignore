@@ -1,0 +1,50 @@
+# OS Specific Files
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDEs and Editors
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+!.vscode/extensions.json
+.project
+.classpath
+.settings/
+.springBeans
+.sts4-cache
+.nb-gradle/
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+
+# Backend (Spring Boot/Maven)
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/HELP.md
+!backend/**/src/main/**/target/
+!backend/**/src/test/**/target/
+
+# Frontend (Node.js/React/Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/pnpm-debug.log*
+
+# Database & Infrastructure
+*.db
+*.log
+backend/keycloak-data/
+
+# Environment Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
