@@ -1,4 +1,31 @@
-# Event Ticket Platform 🎫
+<p align="center">
+  <img src="https://i.ibb.co/Kj2PLQC5/movie-tickets-black-by-Vexels.png" width="120" alt="Event Ticket Platform Logo" />
+</p>
+
+<h1 align="center">Event Ticket Platform</h1>
+
+<p align="center">
+  Plataforma completa para gestão e venda de ingressos digitais, com autenticação OAuth2, QR Codes únicos e validação em tempo real.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java%2021-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 21" />
+  <img src="https://img.shields.io/badge/Spring%20Boot%203-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white" alt="Spring Security" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Keycloak-4D4D4D?style=flat-square&logo=keycloak&logoColor=white" alt="Keycloak" />
+  <img src="https://img.shields.io/badge/React%2019-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Tailwind%20CSS%204-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/ZXing-FF6F00?style=flat-square&logo=qrcode&logoColor=white" alt="ZXing" />
+  <img src="https://img.shields.io/badge/MapStruct-ED1C24?style=flat-square&logo=java&logoColor=white" alt="MapStruct" />
+</p>
+
+---
+
+## 📖 Sobre o Projeto
 
 Uma plataforma completa para gestão e venda de ingressos para eventos, desenvolvida com uma arquitetura moderna e segura, focada em escalabilidade e experiência do usuário. O projeto é um **monorepo** que integra um ecossistema robusto de tecnologias para backend e frontend.
 
@@ -12,8 +39,12 @@ A aplicação segue o padrão de arquitetura de **Sistemas Distribuídos** com s
 A segurança é baseada no protocolo **OpenID Connect (OIDC)**, utilizando o **Keycloak** como provedor de identidade (Identity Provider - IdP).
 
 1.  **Client (Frontend React):** Atua como o cliente público. Quando um usuário tenta acessar uma área restrita, ele é redirecionado para o **Keycloak**.
-2.  **Authentication Server (Keycloak):** Gerencia o login do usuário e, após a autenticação bem-sucedida, emite um **Access Token (JWT)** e um **ID Token**.
+2.  **Authorization Server (Keycloak):** Gerencia o login do usuário e, após a autenticação bem-sucedida, emite um **Access Token (JWT)** e um **ID Token**.
 3.  **Resource Server (Backend Spring Boot):** Atua como o servidor de recursos. O frontend envia o Access Token no cabeçalho das requisições HTTP (`Authorization: Bearer <token>`). O backend valida o token e as permissões (roles) do usuário para processar a requisição.
+
+<p align="center">
+  <img src="https://i.ibb.co/7dqwnN0m/Screenshot-From-2026-03-06-10-42-37.png" alt="Diagrama da Arquitetura do Sistema" width="800" />
+</p>
 
 ---
 
